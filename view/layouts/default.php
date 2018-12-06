@@ -17,6 +17,9 @@ return [
         'css/styles.css'
     ],
     'blocks' => [
+        'head' => [
+                [ 'class' => 'CrazyCat\Index\Block\Head' ]
+        ],
         'messages' => [
                 [ 'class' => 'CrazyCat\Index\Block\Message' ]
         ],

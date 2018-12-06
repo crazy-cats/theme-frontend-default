@@ -17,17 +17,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
         <link rel="shortcut icon" href="<?php echo getStaticUrl( 'images/favicon.ico' ); ?>" type="image/x-icon" />
         <?php echo $this->getCssScripts(); ?>
-        <script type="text/javascript" src="<?php echo getStaticUrl( 'js/require.js' ); ?>"></script>
-        <script type="text/javascript">
-            require.config( {
-                baseUrl: '<?php echo getStaticUrl( '' ); ?>',
-                waitSeconds: 0,
-                paths: {
-                    jquery: '<?php echo getStaticUrl( 'js/jquery' ); ?>',
-                    text: '<?php echo getStaticUrl( 'js/text' ); ?>'
-                }
-            } );
-        </script>
+        <?php echo $this->getSectionHtml( 'head' ); ?>
     </head>
     <body class="two-columns <?php echo $this->getLayoutName( '-' ) ?>">
         <div class="header-wrapper wrapper">
