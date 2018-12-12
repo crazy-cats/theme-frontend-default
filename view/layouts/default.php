@@ -18,13 +18,13 @@ return [
     ],
     'blocks' => [
         'head' => [
-                [ 'class' => 'CrazyCat\Index\Block\Head' ]
+            'js-in-head' => [ 'class' => 'CrazyCat\Index\Block\Head' ]
         ],
         'messages' => [
-                [ 'class' => 'CrazyCat\Index\Block\Message' ]
+            'message-box' => [ 'class' => 'CrazyCat\Index\Block\Message' ]
         ],
         'footer' => [
-                [ 'class' => 'CrazyCat\Index\Block\Template' ]
+            'footer-content' => [ 'class' => 'CrazyCat\Index\Block\Template' ]
         ]
     ]
 ];
