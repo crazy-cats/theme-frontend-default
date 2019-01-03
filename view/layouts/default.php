@@ -20,6 +20,9 @@ return [
         'head' => [
             'js-in-head' => [ 'class' => 'CrazyCat\Core\Block\Head' ]
         ],
+        'header' => [
+            'main-menu' => [ 'class' => 'CrazyCat\Menu\Block\Menu', 'data' => [ 'identifier' => 'main-menu' ] ]
+        ],
         'messages' => [
             'message-box' => [ 'class' => 'CrazyCat\Core\Block\Message' ]
         ],
