@@ -12,9 +12,9 @@
 <head>
     <title><?= htmlEscape($this->getPageTitle()); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" value="<?= htmlEscape($this->getMetaKeywords()); ?>"/>
-    <meta name="description" value="<?= htmlEscape($this->getMetaDescription()); ?>"/>
-    <meta name="robots" value="<?= htmlEscape($this->getMetaRobots()); ?>"/>
+    <meta name="keywords" value="<?= htmlEscape($this->getData('meta_keywords')); ?>"/>
+    <meta name="description" value="<?= htmlEscape($this->getData('meta_description')); ?>"/>
+    <meta name="robots" value="<?= htmlEscape($this->getData('meta_robots')); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <link rel="shortcut icon" href="<?= $this->getThemeUrl('images/favicon.ico'); ?>" type="image/x-icon"/>
     <?= $this->getCssScripts(); ?>
