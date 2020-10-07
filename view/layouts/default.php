@@ -18,13 +18,22 @@ return [
     ],
     'blocks'   => [
         'head'     => [
-            'js-in-head' => ['class' => 'CrazyCat\Base\Block\Head']
+            'class'    => 'CrazyCat\Base\Block\Wrapper',
+            'children' => [
+                'js-in-head' => ['class' => 'CrazyCat\Base\Block\Head']
+            ]
         ],
         'messages' => [
-            'message-box' => ['class' => 'CrazyCat\Base\Block\Message']
+            'class' => 'CrazyCat\Base\Block\Message'
+        ],
+        'main'     => [
+            'class'    => 'CrazyCat\Base\Block\Wrapper'
         ],
         'footer'   => [
-            'footer-content' => ['class' => 'CrazyCat\Base\Block\Template']
+            'class'    => 'CrazyCat\Base\Block\Wrapper',
+            'children' => [
+                'footer-content' => ['class' => 'CrazyCat\Base\Block\Template']
+            ]
         ]
     ]
 ];

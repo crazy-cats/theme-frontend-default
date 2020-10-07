@@ -23,18 +23,18 @@
 <body class="one-column <?= $this->getLayoutName('-') ?>">
 <div class="header-wrapper wrapper">
     <div class="header">
-        <?= $this->getSectionHtml('header'); ?>
+        <?= $this->getBlock('header') ?>
     </div>
 </div>
 <div class="main-wrapper wrapper">
     <div class="main">
-        <?= $this->getSectionHtml('messages'); ?>
-        <?= $this->getSectionHtml('main'); ?>
+        <?= $this->getBlock('messages') ?>
+        <?= $this->getBlock('main') ?>
     </div>
 </div>
 <div class="footer-wrapper wrapper">
     <div class="footer">
-        <?= $this->getSectionHtml('footer'); ?>
+        <?= $this->getBlock('footer') ?>
     </div>
 </div>
 </body>

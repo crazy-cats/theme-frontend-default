@@ -17,27 +17,27 @@
     <meta name="robots" value="<?= htmlEscape($this->getData('meta_robots')); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <link rel="shortcut icon" href="<?= $this->getThemeUrl('images/favicon.ico'); ?>" type="image/x-icon"/>
-    <?= $this->getCssScripts(); ?>
-    <?= $this->getSectionHtml('head'); ?>
+    <?= $this->getCssScripts() ?>
+    <?= $this->getBlock('head') ?>
 </head>
 <body class="two-columns <?= $this->getLayoutName('-') ?>">
 <div class="header-wrapper wrapper">
     <div class="header">
-        <?= $this->getSectionHtml('header'); ?>
+        <?= $this->getBlock('header') ?>
     </div>
 </div>
 <div class="main-wrapper wrapper">
     <div class="left">
-        <?= $this->getSectionHtml('left'); ?>
+        <?= $this->getBlock('left') ?>
     </div>
     <div class="main">
-        <?= $this->getSectionHtml('messages'); ?>
-        <?= $this->getSectionHtml('main'); ?>
+        <?= $this->getBlock('messages') ?>
+        <?= $this->getBlock('main') ?>
     </div>
 </div>
 <div class="footer-wrapper wrapper">
     <div class="footer">
-        <?= $this->getSectionHtml('footer'); ?>
+        <?= $this->getBlock('footer') ?>
     </div>
 </div>
 </body>
