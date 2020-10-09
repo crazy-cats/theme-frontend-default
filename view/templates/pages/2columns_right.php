@@ -11,6 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?= getLangCode(); ?>" lang="<?= getLangCode(); ?>">
 <head>
     <title><?= htmlEscape($this->getPageTitle()); ?></title>
+    <base href="<?= $this->getBaseUrl() ?>"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" value="<?= htmlEscape($this->getData('meta_keywords')); ?>"/>
     <meta name="description" value="<?= htmlEscape($this->getData('meta_description')); ?>"/>

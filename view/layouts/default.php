@@ -24,7 +24,13 @@ return [
             ]
         ],
         'header'   => [
-            'class'    => 'CrazyCat\Base\Block\Wrapper'
+            'class'    => 'CrazyCat\Base\Block\Wrapper',
+            'children' => [
+                'main-menu' => [
+                    'class' => 'CrazyCat\Menu\Block\Menu',
+                    'data'  => ['identifier' => 'main-menu']
+                ]
+            ]
         ],
         'messages' => [
             'class' => 'CrazyCat\Base\Block\Message'
@@ -33,7 +39,7 @@ return [
             'class' => 'CrazyCat\Base\Block\Wrapper'
         ],
         'footer'   => [
-            'class'    => 'CrazyCat\Base\Block\Wrapper'
+            'class' => 'CrazyCat\Base\Block\Wrapper'
         ]
     ]
 ];
