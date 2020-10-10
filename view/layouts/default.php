@@ -28,7 +28,10 @@ return [
             'children' => [
                 'main-menu' => [
                     'class' => 'CrazyCat\Menu\Block\Menu',
-                    'data'  => ['identifier' => 'main-menu']
+                    'data'  => [
+                        'cache'      => true,
+                        'identifier' => 'main-menu'
+                    ]
                 ]
             ]
         ],
